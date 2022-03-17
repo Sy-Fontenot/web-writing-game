@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Game</title>
+</head>
+<body>
+    <main>
+        <section class="previous">
+            <label>Previous sentence(s):</label>
+            <label id="roundCount">Round 4/7</label><br>
+        </section>
+        <section class="current">
+            <form id="currentForm">
+                <label for="currentForm">Write N sentences:</label><br>
+                <input id="currentText" placeholder="story" autocomplete="off"/>
+                <button id="submitText" type="button" onclick="addOne(this)">Yes</button>
+            </form>
+        </section>
+        <section class="attributes">
+            <div>
+                <label>Main Character:</label><br>
+                <input id="mainCharacater" autocomplete="off" onkeyup="hello(this)"/>
+                <label id="charCount">(0/30)</label>
+            </div>
+            <div>
+                <label>Antagonist:</label><br>
+                <input id="antagonist" autocomplete="off"/>
+            </div>
+        </section>
+        <section class="client">
+            <form id="clientTest" action="http://localhost:3000" method="POST">
+                <label for="clientTest">Send to client</label>
+                <input name="clientInput" autocomplete="off"/>
+                <label for="clientTest" name="resultLabel"></label>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

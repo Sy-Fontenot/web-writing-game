@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<script>
+</script>   
+<body>
+
+    <!--
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+        Name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+    </form>
+    -->
+
+    <script src="/scripts/jsonserver.js"></script>
+    <label>First Name:</label><br>
+    <textarea id="fname" name="fname">Edit me!</textarea><br>
+    <button type="button" id="enterButton" onclick="getJSON('bella.json', 'one=hi&two=ho', fname)">Press the first</button>
+    <button type="button" id="testJS" onclick="getJSON('thisisjson.json', '', fname)">Press the after</button>
+</body>
+</html>
